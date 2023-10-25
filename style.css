@@ -1,0 +1,896 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+
+    font-family: 'main';
+    src: url("font/main.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+
+    font-family: 'normal';
+    src: url("font/normal.otf") format('truetype');
+    font-weight: normal;
+}
+
+/* icon color = ( filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg); ) */
+
+body {
+    background: black;
+}
+
+body section a {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'main', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+#preloader {
+    background: #000 url("image/loader.gif") no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* section-1 */
+.header-section {
+    width: 100%;
+    height: fit-content;
+    background: white;
+}
+
+
+.header-section .header-container .header-text h1 {
+    color: black !important;
+    margin-left: 50%;
+    padding-top: 30px;
+    font-weight: bolder !important;
+    font-size: 120px;
+}
+
+.header-section .header-container .header-text p {
+    color: black !important;
+    margin-left: 50%;
+    font-size: 21px;
+    padding-bottom: 15px;
+}
+
+
+
+/* immage section  */
+
+.image-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.image-section .image-box {
+    width: 300px;
+    border: black 5px solid;
+    border-radius: 50%;
+    margin: -150px 0 0 80px;
+}
+
+.image-section .image-box img {
+    border-radius: 50%;
+}
+
+
+/* about-section  */
+
+.about-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.about-section .line img {
+    margin: 50px 0 0 15%;
+    height: 300px !important;
+}
+
+.about-section .about-container .about-box h2 {
+    margin: -23% 0 0 40%;
+    font-size: 70px;
+}
+
+.about-section .about-container .about-box p {
+    color: white !important;
+    margin: 20px 0 0 40%;
+    font-size: 19px;
+    width: 50%;
+}
+
+
+
+/* skill section */
+.skill-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.skill-section .skill-container .codeskill {
+    margin-left: 13% !important;
+}
+
+.skill-section .skill-container .skill-box {
+    background: rgb(21, 21, 21);
+    padding: 50px;
+    margin: 120px 0 0 50px;
+    border-radius: 20px;
+    width: 35%;
+}
+
+.skill-section .skill-container .skill-box p {
+    color: white;
+}
+
+.skill-section .skill-container .skill-box p .green {
+    color: green;
+    margin-left: 30px;
+}
+
+.skill-section .skill-container .skill-box p .yellowishgreen {
+    color: rgb(146, 201, 28);
+    margin-left: 50px;
+}
+
+
+/* review section  */
+
+.review-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.review-section h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 70px;
+}
+
+.review-section .review-container {
+    padding-bottom: 50px;
+}
+
+.review-section .review-container .review-box {
+    margin: 50px 0 0 33px;
+    width: 30%;
+}
+
+.review-section .review-container .review-box h5 {
+    font-family: 'main', sans-serif;
+    text-align: center;
+    color: rgb(149, 235, 241);
+    font-weight: bolder;
+
+}
+
+.review-section .review-container .review-box p {
+    text-align: center;
+    color: white !important;
+    margin-top: 30px;
+}
+
+
+
+/* why section */
+
+.why-section {
+    width: 100%;
+    height: fit-content;
+    background: white;
+}
+
+.why-section .why-container {
+    padding-bottom: 50px;
+}
+
+.why-section .why-container .why-box h2 {
+    padding-top: 50px;
+    color: black !important;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.why-section .why-container .why-box p {
+    margin-top: 30px;
+}
+
+
+
+
+/* contact-section */
+
+.contact-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-section h2 {
+    color: white !important;
+    font-size: 70px;
+    padding-top: 50px;
+    margin-left: 30px;
+}
+
+.contact-section .contact-container {
+    padding-bottom: 70px;
+}
+
+.contact-section .contact-container .contact-box {
+    width: 25%;
+}
+
+.contact-section .contact-container .contact-box h3 {
+    margin: 50px 0 0 30px;
+}
+
+.contact-section .contact-container .contact-box .icon {
+    margin-left: 30px;
+}
+
+.contact-section .contact-container .contact-box .icon a {
+    background: none !important;
+}
+
+.contact-section .contact-container .contact-box .icon a img {
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+    width: 30px;
+    margin: 30px 30px 0 0 !important;
+}
+
+.contact-section .footer {
+    background: rgba(62, 61, 61, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    margin: 0 0 15px 25%;
+    width: 50%;
+    border: none;
+    border-radius: 30px;
+}
+
+.contact-section .footer p {
+    color: rgb(136, 136, 136) !important;
+    padding-top: 10px;
+}
+
+
+/* <<<<<<<<<<   Responsive view >>>>>>>>>>> */
+
+/* Tablet view  */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    #preloader {
+        background-size: 25%;
+    }
+
+    /* section 1 */
+
+    .header-section .header-container .header-text h1 {
+        margin-left: 45%;
+        font-size: 70px;
+    }
+
+    .header-section .header-container .header-text p {
+        font-size: 17px;
+        margin-left: 45%;
+    }
+
+
+
+
+    /* immage section  */
+
+    .image-section .image-box {
+        width: 200px;
+        border: black 3px solid;
+        border-radius: 50%;
+        margin: -100px 0 0 30px;
+    }
+
+
+    /* about-section  */
+
+    .about-section .line img {
+        margin: 50px 0 0 15%;
+        height: 250px !important;
+    }
+
+    .about-section .about-container .about-box h2 {
+        margin: -35% 0 0 40%;
+        font-size: 50px;
+    }
+
+    .about-section .about-container .about-box p {
+        color: white !important;
+        margin: 20px 0 0 30%;
+        font-size: 16px;
+        width: 65%;
+    }
+
+
+    /* skill section */
+
+    .skill-section .skill-container .codeskill {
+        margin-left: 30px !important;
+    }
+
+    .skill-section .skill-container .skill-box {
+        background: rgb(21, 21, 21);
+        padding: 50px;
+        margin: 100px 0 0 20px;
+        border-radius: 20px;
+        width: 45%;
+    }
+
+    .skill-section .skill-container .skill-box p {
+        font-size: 14px;
+    }
+
+
+    /* review section  */
+
+    .review-section h2 {
+        font-size: 50px;
+    }
+
+    .review-section .review-container .review-box {
+        margin: 50px 0 0 15px;
+        width: 30%;
+    }
+
+    .review-section .review-container .review-box h5 {
+        font-size: 17px;
+
+    }
+
+    .review-section .review-container .review-box p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+
+    /* why section */
+
+    .why-section .why-container {
+        padding-bottom: 40px;
+    }
+
+    .why-section .why-container .why-box h2 {
+        font-size: 35px;
+    }
+
+    .why-section .why-container .why-box p {
+        margin-top: 25px;
+    }
+
+
+    /* contact-section */
+
+    .contact-section h2 {
+        font-size: 50px;
+        margin-left: 30px;
+    }
+
+    .contact-section .contact-container {
+        padding-bottom: 70px;
+    }
+
+    .contact-section .contact-container .contact-box {
+        width: 35%;
+    }
+
+    .contact-section .contact-container .contact-box h3 {
+        margin: 50px 0 0 30px;
+        font-size: 20px;
+    }
+
+    .contact-section .contact-container .contact-box .icon {
+        margin-left: 30px;
+    }
+
+    .contact-section .contact-container .contact-box .icon a img {
+        filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+        width: 23px;
+        margin: 30px 30px 0 0 !important;
+    }
+
+    .contact-section .footer {
+        padding: 10px;
+        margin: 0 0 15px 15%;
+        width: 70%;
+    }
+
+    .contact-section .footer p {
+        color: rgb(136, 136, 136) !important;
+        padding-top: 10px;
+    }
+}
+
+
+
+/* for large mobile view  */
+@media only screen and (min-width: 500px) and (max-width: 767px) and (orientation: portrait) {
+
+    #preloader {
+        background-size: 35%;
+    }
+
+
+    /* section 1 */
+
+    .header-section .header-container .header-text h1 {
+        margin-left: 45%;
+        font-size: 45px;
+    }
+
+    .header-section .header-container .header-text p {
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-left: 45%;
+    }
+
+
+    /* immage section  */
+
+    .image-section .image-box {
+        width: 150px;
+        border: black 3px solid;
+        border-radius: 50%;
+        margin: -85px 0 0 5px;
+    }
+
+
+    /* about-section  */
+
+    .about-section .line img {
+        margin: 50px 0 0 15%;
+        height: 270px !important;
+    }
+
+    .about-section .about-container .about-box h2 {
+        margin: -65% 0 0 33%;
+        font-size: 40px;
+
+    }
+
+    .about-section .about-container .about-box p {
+        color: white !important;
+        margin: 10px 0 0 33%;
+        font-size: 14px;
+        width: 63%;
+    }
+
+
+    /* skill section */
+
+    .skill-section .skill-container .codeskill {
+        margin: 80px 0 0 32px !important;
+    }
+
+    .skill-section .skill-container .skill-box {
+        background: rgb(21, 21, 21);
+        padding: 50px;
+        margin: 30px 0 0 32px;
+        border-radius: 15px;
+        width: 85%;
+    }
+
+    .skill-section .skill-container .skill-box p {
+        font-size: 14px;
+    }
+
+
+
+    /* review section  */
+
+    .review-section h2 {
+        padding-top: 80px;
+        font-size: 40px;
+    }
+
+    .review-section .review-container .review-box {
+        margin: 40px 0 0 0;
+        width: auto;
+        padding: 0 60px 0 60px;
+    }
+
+    .review-section .review-container .review-box h5 {
+        font-size: 16px;
+
+    }
+
+    .review-section .review-container .review-box p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+
+    /* why section */
+
+    .why-section .why-container {
+        padding-bottom: 40px;
+    }
+
+    .why-section .why-container .why-box h2 {
+        font-size: 30px;
+    }
+
+    .why-section .why-container .why-box p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+
+
+    /* contact-section */
+
+    .contact-section h2 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .contact-section .contact-container {
+        padding-bottom: 50px;
+    }
+
+    .contact-section .contact-container .contact-box {
+        width: 70%;
+    }
+
+    .contact-section .contact-container .contact-box h3 {
+        margin: 60px 0 0 10px;
+        font-size: 23px;
+    }
+
+    .contact-section .contact-container .contact-box .icon {
+        margin-left: 10px;
+    }
+
+
+    .contact-section .contact-container .contact-box .icon a img {
+        width: 23px;
+        margin: 20px 10px 0 0 !important;
+    }
+
+    .contact-section .footer {
+        padding: 5px;
+        margin: 0 0 20px 0;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .contact-section .footer p {
+        color: rgb(136, 136, 136) !important;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* For Mobile Portrait View */
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) and (orientation: portrait) {
+
+    #preloader {
+        background-size: 35%;
+    }
+
+    /* section 1 */
+
+    .header-section .header-container .header-text h1 {
+        margin-left: 43%;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .header-section .header-container .header-text p {
+        font-size: 12px;
+        padding-bottom: 10px;
+        margin-left: 43%;
+    }
+
+
+    /* immage section  */
+
+    .image-section .image-box {
+        width: 120px;
+        border: black 3px solid;
+        border-radius: 50%;
+        margin: -70px 0 0 5px;
+    }
+
+
+    /* about-section  */
+
+    .about-section .line img {
+        margin: 50px 0 0 15%;
+        height: 250px !important;
+    }
+
+    .about-section .about-container .about-box h2 {
+        margin: -73% 0 0 30%;
+        font-size: 40px;
+    }
+
+    .about-section .about-container .about-box p {
+        color: white !important;
+        margin: 10px 0 0 30%;
+        font-size: 12px;
+        width: 65%;
+    }
+
+
+    /* skill section */
+
+    .skill-section .skill-container .codeskill {
+        margin: 70px 0 0 30px !important;
+    }
+
+    .skill-section .skill-container .skill-box {
+        background: rgb(21, 21, 21);
+        padding: 50px;
+        margin: 30px 0 0 30px;
+        border-radius: 15px;
+        width: 85%;
+    }
+
+    .skill-section .skill-container .skill-box p {
+        font-size: 12px;
+    }
+
+
+
+    /* review section  */
+
+    .review-section h2 {
+        padding-top: 80px;
+        font-size: 40px;
+    }
+
+    .review-section .review-container .review-box {
+        margin: 30px 0 0 0;
+        width: auto;
+        padding: 0 60px 0 60px;
+    }
+
+    .review-section .review-container .review-box h5 {
+        font-size: 14px;
+
+    }
+
+    .review-section .review-container .review-box p {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+
+
+    /* why section */
+
+    .why-section .why-container {
+        padding-bottom: 40px;
+    }
+
+    .why-section .why-container .why-box h2 {
+        font-size: 25px;
+    }
+
+    .why-section .why-container .why-box p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+
+    /* contact-section */
+
+    .contact-section h2 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .contact-section .contact-container {
+        padding-bottom: 50px;
+    }
+
+    .contact-section .contact-container .contact-box {
+        width: 70%;
+    }
+
+    .contact-section .contact-container .contact-box h3 {
+        margin: 50px 0 0 10px;
+        font-size: 21px;
+    }
+
+    .contact-section .contact-container .contact-box .icon {
+        margin-left: 10px;
+    }
+
+
+    .contact-section .contact-container .contact-box .icon a img {
+        width: 21px;
+        margin: 20px 10px 0 0 !important;
+    }
+
+    .contact-section .footer {
+        padding: 5px;
+        margin: 0 0 20px 0;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .contact-section .footer p {
+        color: rgb(170, 169, 169) !important;
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 667px) and (orientation: landscape) {
+
+    #preloader {
+        background-size: 25%;
+    }
+
+    /* section 1 */
+
+    .header-section .header-container .header-text h1 {
+        margin-left: 45%;
+        font-size: 40px;
+    }
+
+    .header-section .header-container .header-text p {
+        font-size: 12px;
+        padding-bottom: 10px;
+        margin-left: 45%;
+    }
+
+    /* immage section  */
+
+    .image-section .image-box {
+        width: 150px;
+        border: black 3px solid;
+        border-radius: 50%;
+        margin: -80px 0 0 20px;
+    }
+
+    /* about-section  */
+
+    .about-section .line img {
+        margin: 30px 0 0 15%;
+        height: 200px !important;
+    }
+
+    .about-section .about-container .about-box h2 {
+        margin: -35% 0 0 30%;
+        font-size: 40px;
+    }
+
+    .about-section .about-container .about-box p {
+        color: white !important;
+        margin: 10px 0 0 30%;
+        font-size: 12px;
+        width: 65%;
+    }
+
+
+    /* skill section */
+
+    .skill-section .skill-container .codeskill {
+        margin: 80px 0 0 15px !important;
+    }
+
+    .skill-section .skill-container .skill-box {
+        background: rgb(21, 21, 21);
+        padding: 50px;
+        margin: 80px 0 0 15px;
+        border-radius: 15px;
+        width: 45%;
+    }
+
+    .skill-section .skill-container .skill-box p {
+        font-size: 12px;
+    }
+
+
+    /* review section  */
+
+    .review-section h2 {
+        padding-top: 80px;
+        font-size: 40px;
+    }
+
+    .review-section .review-container .review-box {
+        margin: 30px 0 0 0;
+        width: auto;
+        padding: 0 60px 0 60px;
+    }
+
+    .review-section .review-container .review-box h5 {
+        font-size: 14px;
+
+    }
+
+    .review-section .review-container .review-box p {
+        margin-top: 13px;
+        font-size: 12px;
+    }
+
+
+    /* why section */
+
+    .why-section .why-container {
+        padding-bottom: 40px;
+    }
+
+    .why-section .why-container .why-box h2 {
+        font-size: 25px;
+    }
+
+    .why-section .why-container .why-box p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+
+    /* contact-section */
+
+    .contact-section h2 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .contact-section .contact-container {
+        padding-bottom: 50px;
+    }
+
+    .contact-section .contact-container .contact-box {
+        width: 70%;
+    }
+
+    .contact-section .contact-container .contact-box h3 {
+        margin: 50px 0 0 10px;
+        font-size: 21px;
+    }
+
+    .contact-section .contact-container .contact-box .icon {
+        margin-left: 10px;
+    }
+
+
+    .contact-section .contact-container .contact-box .icon a img {
+        width: 21px;
+        margin: 20px 10px 0 0 !important;
+    }
+
+    .contact-section .footer {
+        padding: 5px;
+        margin: 0 0 20px 0;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .contact-section .footer p {
+        color: rgb(170, 169, 169) !important;
+        padding-top: 10px;
+        font-size: 13px;
+    }
+}
